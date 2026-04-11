@@ -36,20 +36,18 @@ export default function Navigation() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg'
+            ? 'bg-charcoal-900/95 backdrop-blur-md shadow-lg'
             : 'bg-transparent'
         }`}
       >
         <div className="container-custom">
-          <div className="flex items-center justify-between h-20 md:h-24">
+          <div className="flex items-center justify-between h-36 md:h-44">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="bg-white/30 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <img 
-                  src="/logo1.png" 
-                  alt="Laveen Home Health Logo" 
-                  className="h-16 md:h-20 w-auto object-contain transition-transform group-hover:scale-105"
-                />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="Laveen Home Health Logo" 
+                className="h-32 md:h-40 w-auto object-contain transition-transform group-hover:scale-105"
+              />
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
@@ -59,8 +57,8 @@ export default function Navigation() {
                   to={link.path}
                   className={`text-sm font-semibold transition-colors relative group ${
                     location.pathname === link.path
-                      ? 'text-burgundy-600'
-                      : 'text-charcoal-700 hover:text-burgundy-600'
+                      ? 'text-white'
+                      : 'text-white hover:text-burgundy-200'
                   }`}
                 >
                   {link.name}
@@ -76,7 +74,7 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4">
               <a
                 href="tel:+16142191781"
-                className="flex items-center space-x-2 text-burgundy-600 hover:text-burgundy-700 transition-colors"
+                className="flex items-center space-x-2 text-white hover:text-burgundy-200 transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 <span className="font-semibold">(614) 219-1781</span>
@@ -88,7 +86,7 @@ export default function Navigation() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-charcoal-700 hover:text-burgundy-600 transition-colors"
+              className="lg:hidden p-2 text-white hover:text-burgundy-200 transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
