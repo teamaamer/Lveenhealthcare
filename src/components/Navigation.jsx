@@ -41,12 +41,12 @@ export default function Navigation() {
         }`}
       >
         <div className="container-custom">
-          <div className="flex items-center justify-between h-36 md:h-44">
-            <Link to="/" className="flex items-center space-x-3 group">
+          <div className="flex items-center justify-center lg:justify-between h-36 md:h-44">
+            <Link to="/" className="flex items-center justify-center group">
               <img 
                 src="/logo.png" 
                 alt="Laveen Home Health Logo" 
-                className="h-32 md:h-40 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-28 md:h-36 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </Link>
 
