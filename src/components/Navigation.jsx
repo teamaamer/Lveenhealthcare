@@ -44,7 +44,7 @@ export default function Navigation() {
           <div className="flex items-center justify-center lg:justify-between h-36 md:h-44">
             <Link to="/" className="flex items-center justify-center group">
               <img 
-                src="/logo.png" 
+                src="/logol.png" 
                 alt="Laveen Home Health Logo" 
                 className="h-28 md:h-36 w-auto object-contain transition-transform group-hover:scale-105"
               />

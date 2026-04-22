@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="mb-6 bg-white px-4 py-3 rounded-lg inline-block">
               <img 
-                src="/logo.png" 
+                src="/logol.png" 
                 alt="Laveen Home Health Logo" 
                 className="h-20 w-auto object-contain"
               />
