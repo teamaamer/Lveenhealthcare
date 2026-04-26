@@ -46,7 +46,8 @@ export default function Navigation() {
               <img 
                 src="/logol.png" 
                 alt="Laveen Home Health Logo" 
-                className="h-28 md:h-36 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-28 md:h-36 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-lg"
+                style={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))' }}
               />
             </Link>
 
@@ -74,9 +75,9 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4">
               <a
                 href="tel:+16142191781"
-                className="flex items-center space-x-2 text-white hover:text-burgundy-200 transition-colors"
+                className="flex items-center space-x-2 text-white hover:text-burgundy-200 transition-colors whitespace-nowrap"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 flex-shrink-0" />
                 <span className="font-semibold">(614) 219-1781</span>
               </a>
               <Link to="/contact" className="btn-primary">
