@@ -118,10 +118,13 @@ export default function About() {
               variants={fadeInUp}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-burgundy-100 to-burgundy-200 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Heart className="w-32 h-32 text-burgundy-400/30" />
-                </div>
+              <div className="aspect-[4/3] rounded-3xl shadow-2xl overflow-hidden">
+                <img
+                  src="/images/about/our-mission.jpg"
+                  alt="A Laveen caregiver spending time with a senior client at home"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-burgundy-600 rounded-3xl -z-10"></div>
             </motion.div>

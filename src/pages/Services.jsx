@@ -73,31 +73,37 @@ export default function Services() {
       icon: Utensils,
       title: 'Meal Preparation & Planning',
       description: 'Nutritious meal planning and preparation tailored to dietary needs, preferences, and cultural traditions.',
+      image: '/services/01-meal-preparation-planning.jpg',
     },
     {
       icon: Bath,
       title: 'Hygiene Assistance',
       description: 'Respectful support with bathing, grooming, dressing, and personal care to maintain dignity and comfort.',
+      image: '/services/02-hygiene-assistance.jpg',
     },
     {
       icon: Home,
       title: 'Housekeeping Assistance',
       description: 'Light housekeeping including laundry, tidying, and maintaining a clean, safe living environment.',
+      image: '/services/03-housekeeping-assistance.jpg',
     },
     {
       icon: Users,
       title: 'Companionship',
       description: 'Meaningful social interaction, conversation, activities, and emotional support to combat loneliness and isolation.',
+      image: '/services/04-companionship.jpg',
     },
     {
       icon: ShoppingBag,
       title: 'Errands & Transportation',
       description: 'Assistance with grocery shopping, pharmacy pickups, appointment transportation, and other essential errands.',
+      image: '/services/05-errands-transportation.jpg',
     },
     {
       icon: FileText,
       title: 'Family Status Reporting',
       description: 'Regular updates to family members about daily activities, health status, and any concerns or changes.',
+      image: '/services/06-family-status-reporting.jpg',
     },
   ]
 
@@ -184,9 +190,23 @@ export default function Services() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="section-padding bg-ivory-50">
-        <div className="container-custom">
+      <AnimatedSection className="relative section-padding overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/services/services-background.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover blur-sm scale-105"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-white/95"></div>
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="text-center mb-16">
+            <span className="inline-block px-6 py-2 bg-burgundy-50 text-burgundy-700 rounded-full text-sm font-semibold mb-6">
+              Personal Care at Home
+            </span>
             <h2 className="heading-lg mb-6">Non-Skilled Personal Care Services</h2>
             <p className="text-xl text-charcoal-600 max-w-3xl mx-auto">
               Compassionate assistance with daily activities to help maintain independence, comfort, and quality of life.
@@ -202,17 +222,27 @@ export default function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 variants={fadeInUp}
-                className="card-premium p-8 hover:scale-105 transition-transform duration-300"
+                className="card-service"
               >
-                <div className="w-16 h-16 bg-burgundy-50 rounded-2xl flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-burgundy-600" />
+                <div className="aspect-[4/3] w-full overflow-hidden bg-ivory-100">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
-                <h3 className="text-xl font-display font-semibold text-charcoal-800 mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-charcoal-600 leading-relaxed">
-                  {service.description}
-                </p>
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="w-14 h-14 bg-burgundy-50 rounded-2xl flex items-center justify-center mb-5 -mt-14 relative z-10 border-4 border-white shadow-sm">
+                    <service.icon className="w-7 h-7 text-burgundy-600" />
+                  </div>
+                  <h3 className="text-xl font-display font-semibold text-charcoal-800 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-charcoal-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
