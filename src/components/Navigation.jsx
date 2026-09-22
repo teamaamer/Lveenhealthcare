@@ -41,7 +41,7 @@ export default function Navigation() {
           <div className="grid grid-cols-2 xl:grid-cols-[auto_1fr_auto] items-center gap-4 h-20 md:h-24">
             <Link to="/" className="flex items-center py-2">
               <img
-                src="/logo1.png"
+                src="/logol.png"
                 alt="Laveen Home Health Agency Logo"
                 className="h-14 md:h-16 w-auto object-contain"
               />

@@ -154,7 +154,7 @@ export default function Home() {
               className="mb-6"
             >
               <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full text-sm font-semibold mb-6">
-                Trusted Home Healthcare Since 2010
+                Trusted Home Healthcare Since 2025
               </span>
             </motion.div>
 

@@ -99,7 +99,7 @@ export default function About() {
               <h2 className="heading-lg mb-6">Our Mission</h2>
               <div className="space-y-6 text-lg text-charcoal-600 leading-relaxed">
                 <p>
-                  Founded in 2010, Laveen Home Health Agency was born from a simple yet profound belief: healthcare should be delivered with warmth, respect, and genuine human connection.
+                  Founded in 2025, Laveen Home Health Agency was born from a simple yet profound belief: healthcare should be delivered with warmth, respect, and genuine human connection.
                 </p>
                 <p>
                   We've built our agency on the understanding that medical expertise alone isn't enough. True care requires listening, empathy, and a commitment to seeing the whole person—not just their diagnosis.
